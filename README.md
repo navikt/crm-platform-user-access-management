@@ -1,35 +1,16 @@
-Template repository for PO Arbeidsgiver Salesforce packages. Necessary steps after using template:
+App for users to apply to be assigned permission sets and groups, and also for admins to view what users have assigned.
 
-1. Update `README.md` (this file)
-2. Add secrets
-    - INTEGRATION_SANDBOX_SFDX_URL
-    - PACKAGE_KEY
-    - PREPROD_SFDX_URL
-    - PROD_SFDX_URL
-    - REPO_ACCESS_TOKEN
-    - SLACK_WEBHOOK
-3. Create file `.sfdx/sfdx-config.json`
-    - Add `{"defaultdevhubusername": "[your_devhub_user]","defaultusername": "" }` to it and change the DevHub username
-4. Create a package in SFDX
-    - `sfdx force:package:create -n YourPackageName -t Unlocked -r force-app`
-5. Create an init release in GitHub
-6. Push changes made to `README.md` and `sfdx-project.json`
-7. Create a [Deployment issue](https://github.com/navikt/crm-arbeidsgiver-template/issues/1) (copy text and just create an issue)
+# crm-platform-user-access-management
 
-# crm-arbeidsgiver-template
-
-[![Build](https://github.com/navikt/XXXXXXXXXXXXX/workflows/master/badge.svg)](https://github.com/navikt/XXXXXXXXXXXXX/actions?query=workflow%3ABuild)
-[![GitHub version](https://badgen.net/github/release/navikt/XXXXXXXXXXXXX/stable)](https://github.com/navikt/XXXXXXXXXXXXX)
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/navikt/XXXXXXXXXXXXX/blob/master/LICENSE)
-
-[DESCRIPTION]
+[![Build](https://github.com/navikt/crm-platform-user-access-management/workflows/master/badge.svg)](https://github.com/navikt/crm-platform-user-access-management/actions?query=workflow%3ABuild)
+[![GitHub version](https://badgen.net/github/release/navikt/crm-platform-user-access-management/stable)](https://github.com/navikt/crm-platform-user-access-management)
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/navikt/crm-platform-user-access-management/blob/master/LICENSE)
 
 ## Dependencies
 
 Pakken er avhengig av følgende pakker:
 
-* XXXXXXXXXXXXX(https://github.com/navikt/XXXXXXXXXXXXX)
-* XXXXXXXXXXXXX(https://github.com/navikt/XXXXXXXXXXXXX)
+* crm-platform-base(https://github.com/navikt/crm-platform-base)
 
 
 ## Komme i gang
@@ -62,4 +43,4 @@ Ved å bruke VS Code som IDE, er det lagt inn konfigurasjon som automatisk pushe
 
 ## Annet
 
-For spørsmål om denne applikasjonen, bruk #arbeidsgiver-crm på Slack.
+For spørsmål om denne applikasjonen, bruk #crm-platform-team på Slack.
