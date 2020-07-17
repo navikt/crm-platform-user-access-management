@@ -5,6 +5,7 @@ App for users to apply to be assigned permission sets and groups, and also for a
 [![Build](https://github.com/navikt/crm-platform-user-access-management/workflows/master/badge.svg)](https://github.com/navikt/crm-platform-user-access-management/actions?query=workflow%3ABuild)
 [![GitHub version](https://badgen.net/github/release/navikt/crm-platform-user-access-management/stable)](https://github.com/navikt/crm-platform-user-access-management)
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/navikt/crm-platform-user-access-management/blob/master/LICENSE)
+[![codecov](https://codecov.io/gh/navikt/crm-platform-user-access-management/branch/master/graph/badge.svg)](https://codecov.io/gh/navikt/crm-platform-user-access-management)
 
 ## Dependencies
 
