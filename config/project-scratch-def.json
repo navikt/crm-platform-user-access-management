@@ -1,0 +1,28 @@
+{
+    "orgName": "NAV VIRKSOMHETSLØSNINGER",
+    "edition": "Enterprise",
+    "release": "Current",
+    "adminEmail": "fakeemail@nav.no.scratchorg",
+    "features": [
+        "ProcessBuilder",
+        "API",
+        "PersonAccounts",
+        "ContactsToMultipleAccounts"
+    ],
+    "country": "NO",
+    "language": "en_US",
+    "settings": {
+        "lightningExperienceSettings": {
+            "enableS1DesktopEnabled": true
+        },
+        "languageSettings": {
+            "enableTranslationWorkbench": true
+        },
+        "accountSettings": {
+            "enableAccountTeams": true
+        },
+        "emailAdministrationSettings": {
+            "enableEnhancedEmailEnabled": true
+        }
+    }
+}
