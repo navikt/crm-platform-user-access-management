@@ -2,7 +2,7 @@ import { LightningElement, track, api } from 'lwc';
 export default class SubmitAccessApplicationConfirmation extends LightningElement {
 
     @track isModalOpen;
-    @api data;
+    @api originalData;
     @api selectedRows;
 
     @track filteredData;
@@ -27,7 +27,7 @@ export default class SubmitAccessApplicationConfirmation extends LightningElemen
     connectedCallback() {
         let tmp = [];
 
-        this.data.forEach(record => {
+        this.originalData.forEach(record => {
             if (this.selectedRows.includes(record.id)) {
                 tmp.push(record);
                 if (record.children && record.children.length > 0) {
