@@ -4,7 +4,7 @@ import getPermissions from '@salesforce/apex/AccessApplicationController.getPerm
 import { COLUMNS } from './data';
 import { checkChildren, uncheckChildren, checkHeader, uncheckHeader } from './check';
 
-export default class SubmitAccessApplication extends LightningElement {
+export default class AccessApplicationSubmit extends LightningElement {
 
     @track data;
     @track dataObj;

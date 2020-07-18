@@ -1,0 +1,20 @@
+.box {
+    border-radius: 0.3rem;
+    border: 1px solid #dddbda;
+}
+
+.box:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.img {
+    border-top-left-radius: 0.2rem;
+    border-top-right-radius: 0.2rem;
+}
+
+.title {
+    border-bottom-left-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+    background-color: #f4f6f9;
+}

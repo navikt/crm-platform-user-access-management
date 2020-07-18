@@ -46,7 +46,7 @@
             </template>
 
             <!-- DATA -->
-            <lightning-tree-grid columns={columns} original-data={data} key-field="id" selected-rows={selectedRows}
+            <lightning-tree-grid columns={columns} data={data} key-field="id" selected-rows={selectedRows}
                 onrowselection={updateSelectedRows} expanded-rows={expandedRows} ontoggle={rowToggle}>
             </lightning-tree-grid>
 
@@ -59,13 +59,10 @@
             </div>
         </div>
 
-
     </lightning-card>
 
-
-    <c-submit-access-application-confirmation if:true={isModalOpen} data={data} selected-rows={selectedRows}>
-    </c-submit-access-application-confirmation>
-
-
+    <!-- MODAL -->
+    <c-access-application-confirmation if:true={isModalOpen} original-data={data} selected-rows={selectedRows}>
+    </c-access-application-confirmation>
 
 </template>

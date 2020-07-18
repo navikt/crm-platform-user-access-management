@@ -11,6 +11,7 @@
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <label>Tilgangssøkeren</label>
     <navType>Standard</navType>
-    <tabs>AccessApplicationSubmit</tabs>
+    <tabs>AccessManagementHome</tabs>
+    <tabs>AccessApplication</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

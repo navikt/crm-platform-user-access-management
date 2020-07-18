@@ -1,3 +1,47 @@
 <template>
-    
+
+    <lightning-layout horizontal-align="center" vertical-align="center" style="height: 70%;">
+        <lightning-layout-item padding="around-medium" size="7">
+
+
+
+            <lightning-card>
+
+                <!-- TITLE -->
+                <div slot="title">
+                    <div class="slds-media">
+                        <div class="slds-media__figure">
+                            <lightning-icon icon-name="standard:portal" size="large"></lightning-icon>
+                        </div>
+                        <div class="slds-media__body">
+                            <h3 class=slds-var-m-top_small>Tilgangssøkeren</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="min-height: 100px" class="slds-is-relative">
+
+                    <lightning-layout class="slds-var-p-horizontal_medium">
+
+                        <template for:each={data} for:item="button">
+                            <lightning-layout-item padding="around-large" size="4" key={button.id}>
+                                <div class="slds-text-align_center box" onclick={button.func}>
+                                    <div class="slds-var-p-top_medium slds-var-p-horizontal_medium img"
+                                        style={button.style}>
+                                        <img class="slds-var-p-top_large" src={button.img} />
+                                    </div>
+                                    <div class="slds-text-heading_medium slds-var-p-around_medium title">{button.text}
+                                    </div>
+                                </div>
+                            </lightning-layout-item>
+                        </template>
+
+                    </lightning-layout>
+
+                </div>
+            </lightning-card>
+
+        </lightning-layout-item>
+    </lightning-layout>
+
 </template>
