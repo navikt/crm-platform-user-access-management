@@ -6,6 +6,7 @@
     "features": [
         "ProcessBuilder",
         "API",
+        "LiveAgent",
         "PersonAccounts",
         "ContactsToMultipleAccounts"
     ],
