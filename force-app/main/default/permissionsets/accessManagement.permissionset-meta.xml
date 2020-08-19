@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <applicationVisibilities>
-        <application>accessApplication</application>
+        <application>accessManagement</application>
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
@@ -9,7 +9,11 @@
         <enabled>true</enabled>
     </classAccesses>
     <tabSettings>
-        <tab>AccessApplicationSubmit</tab>
+        <tab>AccessManagementHome</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>AccessApplication</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <description>Med denne appen kan du søke til deg nye tilganger</description>

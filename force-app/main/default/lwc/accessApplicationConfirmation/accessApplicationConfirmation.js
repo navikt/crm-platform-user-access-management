@@ -1,5 +1,5 @@
 import { LightningElement, track, api } from 'lwc';
-export default class SubmitAccessApplicationConfirmation extends LightningElement {
+export default class AccessApplicationConfirmation extends LightningElement {
 
     @track isModalOpen;
     @api originalData;

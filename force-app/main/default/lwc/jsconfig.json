@@ -1,12 +1,23 @@
 {
     "compilerOptions": {
         "baseUrl": ".",
-        "paths": {},
+        "paths": {
+            "c/accessManagementHome": [
+                "accessManagementHome/accessManagementHome.js"
+            ],
+            "c/accessApplicationSubmit": [
+                "accessApplicationSubmit/accessApplicationSubmit.js"
+            ],
+            "c/accessApplicationConfirmation": [
+                "accessApplicationConfirmation/accessApplicationConfirmation.js"
+            ]
+        },
         "experimentalDecorators": true
     },
     "include": [
         "**/*",
-        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+        "../../../../.sfdx/typings/lwc/**/*.d.ts",
+        ""
     ],
     "typeAcquisition": {
         "include": [
