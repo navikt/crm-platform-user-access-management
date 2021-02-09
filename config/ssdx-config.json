@@ -6,7 +6,5 @@
         "unpackagable": "",
         "package-key": ".ssdx/.packageKey"
     },
-    "permsets_to_assign": [
-        "accessApplication"
-    ]
+    "permsets_to_assign": ["accessApplication"]
 }

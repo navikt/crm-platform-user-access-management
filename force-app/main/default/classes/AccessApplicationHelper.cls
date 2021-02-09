@@ -1,37 +1,41 @@
 public with sharing class AccessApplicationHelper {
+    public static List<AccessApplicationModel> convertPermsetToModel(
+        List<PermissionSet> permsets,
+        List<PermissionSetAssignment> permsetAssignemnts,
+        List<AccessApplication__c> accessApplications
+    ) {
+        List<AccessApplicationModel> permsetModels = new List<AccessApplicationModel>();
 
-	public static List<AccessApplicationModel> convertPermsetToModel( List<PermissionSet> permsets, List<PermissionSetAssignment> permsetAssignemnts, List<AccessApplication__c> accessApplications ) {
+        for (PermissionSet ps : permsets) {
+            // AccessApplicationModel permsetModel = new AccessApplicationModel(name, description, isAssigned, false, null);
+        }
 
-		List<AccessApplicationModel> permsetModels = new List<AccessApplicationModel> ();
+        return null;
+    }
 
-		for ( PermissionSet ps : permsets ) {
+    public static List<AccessApplicationModel> convertPermsetGroupToModel(
+        List<PermissionSetGroup> permsetGroups,
+        List<AccessApplicationModel> permsetModels,
+        List<PermissionSetAssignment> permsetAssignemnts,
+        List<AccessApplication__c> accessApplications
+    ) {
+        List<AccessApplicationModel> permsetGroupModels = new List<AccessApplicationModel>();
 
-			// AccessApplicationModel permsetModel = new AccessApplicationModel(name, description, isAssigned, false, null);
+        for (PermissionSetGroup ps : permsetGroups) {
+            List<AccessApplicationModel> permsetsInGroup = new List<AccessApplicationModel>();
+            for (AccessApplicationModel psm : permsetModels) {
+                // TODO get permset in group
+            }
 
-		}
+            // AccessApplicationModel permsetModel = new AccessApplicationModel(name, description, isAssigned, true, permsetsInGroup);
+        }
 
-		return null;
-	}
+        return null;
+    }
 
-	public static List<AccessApplicationModel> convertPermsetGroupToModel( List<PermissionSetGroup> permsetGroups, List<AccessApplicationModel> permsetModels, List<PermissionSetAssignment> permsetAssignemnts, List<AccessApplication__c> accessApplications ) {
-
-		List<AccessApplicationModel> permsetGroupModels = new List<AccessApplicationModel> ();
-
-		for ( PermissionSetGroup ps : permsetGroups ) {
-
-			List<AccessApplicationModel> permsetsInGroup = new List<AccessApplicationModel>();
-			for ( AccessApplicationModel psm : permsetModels ) {
-				// TODO get permset in group
-			}
-
-			// AccessApplicationModel permsetModel = new AccessApplicationModel(name, description, isAssigned, true, permsetsInGroup);
-
-		}
-
-		return null;
-	}
-
-	public static List<AccessApplicationModel> removePermsetInGroups( List<AccessApplicationModel> permsetModels ) {
-		return null;
-	}
+    public static List<AccessApplicationModel> removePermsetInGroups(
+        List<AccessApplicationModel> permsetModels
+    ) {
+        return null;
+    }
 }

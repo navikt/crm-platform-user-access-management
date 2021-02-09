@@ -1,10 +1,9 @@
-export { checkChildren, uncheckChildren, checkHeader, uncheckHeader }
+export { checkChildren, uncheckChildren, checkHeader, uncheckHeader };
 
 // check children if header checked
 const checkChildren = (record, currentlySelectedRows, recordChecked) => {
-
     if (recordChecked) {
-        record.children.forEach(child => {
+        record.children.forEach((child) => {
             if (!currentlySelectedRows.includes(child.id)) {
                 currentlySelectedRows.push(child.id);
             }
@@ -14,9 +13,8 @@ const checkChildren = (record, currentlySelectedRows, recordChecked) => {
 
 // uncheck children if header unchecked
 const uncheckChildren = (record, currentlySelectedRows, recordUnchecked) => {
-
     if (recordUnchecked) {
-        record.children.forEach(child => {
+        record.children.forEach((child) => {
             remove(child.id, currentlySelectedRows);
         });
     }
@@ -24,7 +22,6 @@ const uncheckChildren = (record, currentlySelectedRows, recordUnchecked) => {
 
 // check header if all children are checked
 const checkHeader = (record, currentlySelectedRows) => {
-
     let allSelected = areAllChildrenSelected(record, currentlySelectedRows);
 
     if (allSelected && !currentlySelectedRows.includes(record.id)) {
@@ -34,7 +31,6 @@ const checkHeader = (record, currentlySelectedRows) => {
 
 // uncheck header if all children are not checked
 const uncheckHeader = (record, currentlySelectedRows, expandedRows) => {
-
     let allSelected = areAllChildrenSelected(record, currentlySelectedRows);
     let isChecked = currentlySelectedRows.includes(record.id);
     let isExpanded = expandedRows.includes(record.id);
@@ -43,7 +39,6 @@ const uncheckHeader = (record, currentlySelectedRows, expandedRows) => {
         remove(record.id, currentlySelectedRows);
     }
 };
-
 
 // HELPER FUNCTIONS
 // -------------------------------------------------
@@ -56,10 +51,9 @@ const remove = (indexStr, currentlySelectedRows) => {
 };
 
 const areAllChildrenSelected = (record, currentlySelectedRows) => {
-
     var allSelected = true;
 
-    record.children.forEach(child => {
+    record.children.forEach((child) => {
         if (!currentlySelectedRows.includes(child.id)) {
             allSelected = false;
         }

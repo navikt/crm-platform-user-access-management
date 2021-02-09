@@ -1,6 +1,5 @@
 import { LightningElement, track, api } from 'lwc';
 export default class SubmitAccessApplicationConfirmation extends LightningElement {
-
     @track isModalOpen;
     @api originalData;
     @api selectedRows;
@@ -8,26 +7,25 @@ export default class SubmitAccessApplicationConfirmation extends LightningElemen
     @track filteredData;
     @track expandedRows = [];
 
-
     columns = [
         {
             type: 'text',
             fieldName: 'name',
-            label: 'Name',
+            label: 'Name'
         },
 
         {
             type: 'text',
             fieldName: 'description',
             label: 'Description',
-            initialWidth: 400,
-
-        }];
+            initialWidth: 400
+        }
+    ];
 
     connectedCallback() {
         let tmp = [];
 
-        this.originalData.forEach(record => {
+        this.originalData.forEach((record) => {
             if (this.selectedRows.includes(record.id)) {
                 tmp.push(record);
                 if (record.children && record.children.length > 0) {

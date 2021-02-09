@@ -2,13 +2,13 @@ export const COLUMNS = [
     {
         type: 'text',
         fieldName: 'name',
-        label: 'Name',
+        label: 'Name'
     },
 
     {
         type: 'text',
         fieldName: 'description',
         label: 'Description',
-        initialWidth: 1000,
-    },
+        initialWidth: 1000
+    }
 ];
