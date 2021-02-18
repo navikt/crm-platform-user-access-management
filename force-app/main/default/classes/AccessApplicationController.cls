@@ -71,10 +71,7 @@ public with sharing class AccessApplicationController {
             false,
             null
         );
-        List<AccessApplicationModel> group1List = new List<AccessApplicationModel>{
-            group1_1,
-            group1_2
-        };
+        List<AccessApplicationModel> group1List = new List<AccessApplicationModel>{ group1_1, group1_2 };
         AccessApplicationModel group1 = new AccessApplicationModel(
             '001i000001AWbWugt7',
             null,
@@ -112,11 +109,7 @@ public with sharing class AccessApplicationController {
             false,
             null
         );
-        List<AccessApplicationModel> group2List = new List<AccessApplicationModel>{
-            group2_1,
-            group2_2,
-            group2_3
-        };
+        List<AccessApplicationModel> group2List = new List<AccessApplicationModel>{ group2_1, group2_2, group2_3 };
         AccessApplicationModel group2 = new AccessApplicationModel(
             '001i000001AWbWug11',
             null,

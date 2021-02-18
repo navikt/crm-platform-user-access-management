@@ -3,8 +3,7 @@
     <apiVersion>48.0</apiVersion>
     <isExposed>true</isExposed>
     <masterLabel>Submit Access Application</masterLabel>
-    <description
-    >A component to submit an application to gain access to more objects</description>
+    <description>A component to submit an application to gain access to more objects</description>
     <targets>
         <target>lightning__Tab</target>
     </targets>
