@@ -3,12 +3,7 @@
     "edition": "Enterprise",
     "release": "Current",
     "adminEmail": "fakeemail@nav.no.scratchorg",
-    "features": [
-        "ProcessBuilder",
-        "API",
-        "PersonAccounts",
-        "ContactsToMultipleAccounts"
-    ],
+    "features": ["ProcessBuilder", "API", "PersonAccounts", "ContactsToMultipleAccounts"],
     "country": "NO",
     "language": "en_US",
     "settings": {

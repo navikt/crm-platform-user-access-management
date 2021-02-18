@@ -33,9 +33,7 @@ public with sharing class AccessApplicationHelper {
         return null;
     }
 
-    public static List<AccessApplicationModel> removePermsetInGroups(
-        List<AccessApplicationModel> permsetModels
-    ) {
+    public static List<AccessApplicationModel> removePermsetInGroups(List<AccessApplicationModel> permsetModels) {
         return null;
     }
 }
